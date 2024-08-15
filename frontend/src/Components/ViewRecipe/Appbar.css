@@ -1,0 +1,194 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.app-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff; /* Or any background color you prefer */
+  border-bottom: 1px solid #ccc;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 10px;
+}
+
+.nav-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-text h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.nav-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.btn {
+  padding: 5px 10px;
+  margin-left: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.auth {
+  text-align: right;
+}
+
+.auth a {
+  display: inline-block;
+  margin-left: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.auth a:hover {
+  text-decoration: underline;
+}
+
+.app-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color:white;
+  padding: 15px 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav h2 {
+  margin: 0;
+  color:white;
+}
+
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: white;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.search input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.search button {
+  background-color: #004d4a;
+  color: white;
+  border: none;
+  height:33px;
+  width:33px;
+  /* padding: 10px 12px; Adjusted padding */
+  border-radius: 0 0px 0px 0; /*Adjusted border-radius */
+  cursor: pointer;
+  font-size: 0.9em; /* Adjusted font size */
+  transition: background-color 0.3s;
+  margin-left: -4px; /* Ensure the button is right next to the input */
+}
+
+.search button:hover {
+  background-color: #003d3a;
+}
+
+.auth {
+  display: flex;
+  align-items: center;
+}
+
+.auth a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.auth a:hover {
+  color: #003d3a;
+}
+
+.auth .register {
+  background-color: #004d4a;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-left: 15px;
+  transition: background-color 0.3s;
+}
+
+.auth .register:hover {
+  background-color: #003d3a;
+}
+
+@media (max-width: 768px) {
+  .app-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .search input {
+    width: 100%;
+  }
+
+  .auth {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .auth a {
+    margin: 5px 0;
+  }
+
+  .auth .register {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}

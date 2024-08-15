@@ -1,0 +1,99 @@
+.no-scroll {
+    overflow: hidden;
+    height: 100%;
+  }
+#firstimg {
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    /* background-image: url('../Pictures/first.jpg'); */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+    color: black;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    position: relative; /* Allow absolute positioning of children */
+}
+#btn{
+    width: 20%;
+    margin-left: 20%;
+    margin-right: 26%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.log {
+    height: 300px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: -2px; /* Space between the form and button below */
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form h1 {
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center the heading text */
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+#btsu {
+    padding: 10px 20px;
+    background-color: #0085ba;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; /* Space between the form and button */
+}
+
+#btsu:hover {
+    background-color: #007B9A;
+}

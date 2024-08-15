@@ -1,0 +1,163 @@
+.recipe-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* To allow wrapping of cards if they exceed the width */
+  gap: 20px; /* Space between cards */
+  margin-top: 20px;
+}
+
+.recipe-card {
+  width: 30%; /* Ensure that three cards fit in a row */
+  max-width: 300px; /* Adjust the maximum width as needed */
+  height: auto; /* Let the height adjust based on content */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+  padding: 16px; /* Add padding inside the card */
+}
+
+.recipe-image {
+  width: 100%; /* Full width of the card */
+  height: 200px; /* Adjust the height as needed */
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-bottom: 16px; /* Space between image and content */
+}
+
+.recipe-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the area */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.recipe-image video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+.recipe-card:hover .recipe-image video {
+  opacity: 1;
+}
+
+.recipe-card:hover .recipe-image img {
+  opacity: 0;
+}
+
+.rimg {
+  margin-top: 10px;
+  height: 180px;
+  width: 100%; /* Full width of the card */
+}
+
+.recipe-details {
+  width: 100%; /* Full width of the card */
+  text-align: left;
+}
+
+.recipe-title {
+  font-size: 1.25em;
+  margin-bottom: 10px; /* Space below the title */
+}
+
+.recipe-description {
+  font-size: 1em;
+  margin-bottom: 20px; /* Space below the description */
+}
+.success-message {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Distribute buttons evenly */
+  gap: 10px; /* Space between the buttons */
+  width:100%;
+}
+#buttonapprove{
+  width: 12%;
+  height: 35px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+#buttonedit{
+  width: 12%;
+  height: 37px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.recipe-details button {
+  flex: 1; /* Make buttons take equal space */
+  padding: 10px;
+  background-color: #4CAF50; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px; /* Standard font size */
+  max-width: 45%; /* Ensure buttons don’t exceed half the container width */
+  text-align: center; /* Center text within the button */
+}
+
+.backButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Space above the button */
+  margin-bottom: 20px; /* Space below the button */
+}
+
+.backButton {
+  padding: 10px 20px;
+  background-color: #333 !important; /* Black background */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.backButton:hover {
+  color:white;
+  background-color: #222; /* Slightly darker black for hover */
+}
+.h2{
+  font-size: 26px; /* Slightly larger font size */
+  color: #333; 
+}

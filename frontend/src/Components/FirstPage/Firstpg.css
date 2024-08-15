@@ -1,0 +1,44 @@
+/* Firstpg.css */
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+#firstimg2 {
+ 
+    width: 1500px;
+    height: 700px;
+    /* padding: 10px; */
+    background-image: url('../Pictures/first.jpg');
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+    color: black;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    position: relative; /* Allow absolute positioning of children */
+
+
+}
+
+button {
+  width: 200px; /* Set a fixed width */
+  height: 50px; /* Set a fixed height */
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  font-size: 16px;
+  text-align: center;
+  margin: 10px; /* Add margin between buttons */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+button h1 {
+  font-size: 20px; /* Adjust the font size as needed */
+  margin: 0; /* Remove default margin */
+}

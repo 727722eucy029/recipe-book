@@ -1,0 +1,175 @@
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f9; /* Soft off-white background */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  position: relative;
+  z-index: 1;
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  /* background: linear-gradient(135deg, #ececec, #ffffff); */
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  */
+  transition: background 0.5s ease-in-out;
+}
+
+/* Headings */
+h1, h2 {
+  margin: 10px 0;
+  text-align: center;
+  color: #333; /* Dark gray for text */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-weight: 600;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.95); /* Slightly opaque white background */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Form Group */
+.formGroup {
+  margin-bottom: 20px;
+}
+
+/* Labels */
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555; /* Medium gray for labels */
+  font-size: 14px;
+}
+
+/* Inputs, Textareas, Selects */
+.input,
+.textarea,
+.select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd; /* Light gray border */
+  box-sizing: border-box;
+  background-color: #fafafa; /* Soft light background */
+  color: #333; /* Dark gray text */
+  font-size: 16px;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+/* Select */
+.select {
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 14 10"><path fill="%23555" d="M7 10L0 0h14z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 12px;
+}
+
+/* Error Messages */
+.error {
+  color: #ff4d4d;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Container for buttons */
+.buttonContainer {
+  display: flex;
+  justify-content: center; 
+  gap: -10px; /* Equal spacing between the buttons */
+  margin-top: 20px;
+}
+
+/* Buttons */
+.submitButton{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  margin-left: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover transition */
+  width: 130px; /* Consistent button width */
+}
+.arbackButton {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover transition */
+  width: 130px; /* Consistent button width */
+}
+
+/* Submit button hover effect */
+.submitButton:hover {
+  background-color: #555; /* Slightly lighter gray on hover */
+  transform: translateY(-2px); /* Subtle lift on hover */
+}
+
+/* Back button hover effect */
+.arbackButton:hover {
+  background-color: #f8f8f8; /* Light gray on hover */
+  color: #333; /* Dark text color on hover */
+  transform: translateY(-2px); /* Subtle lift on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .buttonContainer {
+    flex-direction: column;
+    gap: 20px; /* Reduced gap for smaller screens */
+  }
+
+  .submitButton,
+  .arbackButton {
+    width: 100%; /* Full width on smaller screens */
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .form {
+    padding: 20px;
+  }
+
+  .submitButton,
+  .arbackButton {
+    width: 100%; /* Full width on smaller screens */
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
